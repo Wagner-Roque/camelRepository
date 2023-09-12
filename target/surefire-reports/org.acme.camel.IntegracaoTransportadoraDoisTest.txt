@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.acme.camel.IntegracaoTransportadoraDoisTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in org.acme.camel.IntegracaoTransportadoraDoisTest
+org.acme.camel.IntegracaoTransportadoraDoisTest.shouldSendToCorrectIntegration  Time elapsed: 0.011 s  <<< ERROR!
+org.apache.camel.RuntimeCamelException: java.lang.RuntimeException: Error initializing CamelContext
+Caused by: java.lang.RuntimeException: Error initializing CamelContext
+Caused by: org.apache.camel.RuntimeCamelException: java.lang.ClassNotFoundException: org.apache.camel.component.http.HttpConvertersLoader
+Caused by: java.lang.ClassNotFoundException: org.apache.camel.component.http.HttpConvertersLoader
+
