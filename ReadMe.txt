@@ -1,4 +1,4 @@
-Camel Main
+Camel Main with standAlone
 ==========
 
 This example shows how to run Camel standalone via the built-in Main class.
