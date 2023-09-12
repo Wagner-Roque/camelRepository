@@ -6,6 +6,9 @@ import org.apache.camel.component.http.HttpConstants;
 public class IntegracaoTransportadora2 extends RouteBuilder {
     @Override
     public void configure() throws Exception {
+
+        errorHandler(deadLetterChannel("file:{{diretorioTransportadoraErro}}").maximumRedeliveries(2));
+
         from("direct:integracaoTransporte2")
                 .routeId("integracao-arquivo-transportes1")
                 .throttle(1).timePeriodMillis(5000).asyncDelayed()
