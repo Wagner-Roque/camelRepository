@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 @CamelMainTest(
-        mainClass = MainApplication.class,
+        mainClass = Main.class,
         replaceRouteFromWith = {"integracao-arquivo=direct:inicio"},
         mockEndpointsAndSkip = "(direct:integracaoTransporte[12]|file:transportatora1-erro.*)"
 )

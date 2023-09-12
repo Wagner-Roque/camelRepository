@@ -96,7 +96,7 @@
         <version>3.20.0</version>
         <configuration>
           <logClasspath>true</logClasspath>
-          <mainClass>org.acme.camel.MainApplication</mainClass>
+          <mainClass>org.acme.camel.Main</mainClass>
         </configuration>
       </plugin>
       <plugin>
